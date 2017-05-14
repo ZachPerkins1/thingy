@@ -1,0 +1,67 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#prompt {
+    height: 200px;
+    background-color: darkgray;
+    margin-top: -22px;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: block;
+    position: relative;
+    height: 50%
+}
+
+#prompt-container {
+    bottom: 0px;
+    position: absolute;
+    padding-left: 16px;
+    color: white;
+}
+
+
+#options {
+    margin-bottom: -22px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 50%;
+    font-size: 0;
+}
+
+.option {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+    height: 100%;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.option:hover {
+    background-color: lightgray;
+    transition: all 0.5s;
+}
+
+.option-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.option.right {
+    margin-right: -3px;
+}
+
+#lose-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-align: center;
+}

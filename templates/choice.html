@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+        <title>HOD Game</title>
+        
+        <script>
+            function submitChoice(choice) {
+                var form = document.getElementById("submit");
+                document.getElementById("form-choice").value = choice;
+                form.submit();
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div id="prompt">
+            <div id="prompt-container"><h1>{{ prompt }}</h1>
+                </div>
+        </div>
+        
+        <div id="options">
+            <div class="option" onclick="submitChoice(0)">
+                <div class="option-container">{{ choice_a }}</div>
+            </div>
+                
+            <div class="option" onclick="submitChoice(1)">
+                <div class="option-container">{{ choice_b }}</div>
+            </div>
+        </div>
+        
+        <form action="{{ url_for('make_choice') }}" method=post id="submit">
+            <input type="hidden" name="choice" value="0" id="form-choice"/>
+        </form>
+    </body>
+</html>

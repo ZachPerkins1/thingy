@@ -1,0 +1,237 @@
+﻿<prompts>
+    <prompt id="0">
+        <text>You arrive at the base camp on a ship. While walking towards the post, you see a native that looks like he needs help</text>
+        <choice link="1">Help him</choice>
+        <choice link="2">Ignore him</choice>
+    </prompt>
+    <prompt id="1">
+        <text>You decided to help this man. The native takes this as a gratitude and will remember that you helped him.</text>
+        <choice link="4">Head into the station</choice>
+        <choice link="3">Stay back with the native</choice>
+    </prompt>
+    <prompt id="2">
+        <text>You ignore the native</text>
+        <choice link="5">Go to the station</choice>
+        <choice link="0">Rethink your decision and stay back with the native</choice>
+    </prompt>
+    <prompt id="3">
+        <text>The natives feel emasculated by your over concern</text>
+        <choice link="5">Go to the station</choice>
+        <choice link="5">Go to the station</choice>
+    </prompt>
+    <prompt id="4">
+        <text>Inside the station you meet a trader. While you are talking to the trader, two strangers rush in with an injured native who had an arrow sticking out of him. The stranger's place him on the ground.</text>
+        <choice link="6">Run and get a doctor</choice>
+        <choice link="7">Try to save him yourself</choice>
+    </prompt>
+	<prompt id="5">
+        <text>Inside the station you meet a trader. While you are talking to the trader, two strangers rush in with an injured native who had an arrow sticking out of him. The stranger's place him on the ground.</text>
+        <choice link="6">Run and get a doctor</choice>
+        <choice link="7">Try to save him yourself</choice>
+    </prompt>
+    <prompt id="6">
+        <text>You run around the camp trying to find a doctor but found no one (it's the thought that counts) Although you do find other natives and they perform African rituals and cure this man.  </text>
+        <choice link="9">Wait in camp</choice>
+        <choice link="8">Try to leave</choice>
+    </prompt>
+    <prompt id="7">
+        <text>You were never a doctor and ended up killing him (oh). The natives don’t trust you now</text>
+        <choice link="-1">Whoops</choice>
+        <choice link="-1">Whoops</choice>
+    </prompt>
+	<prompt id="8">
+        <text>You fall in a hole and die</text>
+        <choice link="-1">This just seems lazy</choice>
+        <choice link="-1">This choose your own adventure is bad</choice>
+    </prompt>
+	<prompt id="9">
+        <text>While you wait in camp for an expedition you happen to see your childhood here Sir Dick (Richard) Wolf. After a long dry chat he invites you to his expedition deep into the heart of Africa.</text>
+        <choice link="11">Sure</choice>
+        <choice link="-1">Nahhhh i'm good</choice>
+    </prompt>
+    <prompt id="10">
+        <text>The next day comes and you are at the camp which is bustling with natives carrying equipment ready for the expedition. You see a particular native that struck your attention and you realize he is the same one from the other day while walking to the station. </text>
+        <choice link="10">Continue walking through</choice>
+        <choice link="-1">Walk through continuously</choice>
+    </prompt>
+	<prompt id="11">
+        <text>The next day comes and you are at the camp which is bustling with natives carrying equipment ready for the expedition. You don't see anyone you recognize. </text>
+        <choice link="12">Continue walking through</choice>
+        <choice link="12">Walk through continuously</choice>
+    </prompt>
+	<prompt id="12">
+        <text>Whoops! You trip and fall. It appears you have injured your ankle.</text>
+        <choice link="18">Ask for help</choice>
+        <choice link="15">Take this matter into your own hands</choice>
+    </prompt>
+    <prompt id="13">
+        <text>You run around the camp trying to find a doctor but found no one (it's the thought that counts) Although you do find other natives and they perform African rituals and cure this man.  </text>
+        <choice link="9">Wait in camp</choice>
+        <choice link="8">Try to leave</choice>
+    </prompt>
+	<prompt id="14">
+        <text>While you wait in camp for an expedition you happen to see your childhood here Sir Dick (Richard) Wolf. After a long dry chat he invites you to his expedition deep into the heart of Africa.</text>
+        <choice link="10">Sure</choice>
+        <choice link="-1">Nahhhh i'm good</choice>
+    </prompt>
+	<prompt id="15">
+        <text>Not a good idea. You end up hurting yourself more.</text>
+        <choice link="12">Go back</choice>
+        <choice link="12">Go back</choice>
+    </prompt>
+	<prompt id="16">
+        <text>Whoops! You trip and fall. It appears you have injured your ankle.</text>
+        <choice link="18">Ask for help</choice>
+        <choice link="17">Take this matter into your own hands</choice>
+    </prompt>
+	<prompt id="17">
+        <text>Not a good idea. You end up hurting yourself more.</text>
+        <choice link="16">Go back</choice>
+        <choice link="16">Go back</choice>
+    </prompt>
+	<prompt id="18">
+        <text>You look around and request help. Luckily the native you saved earlier is there and gets some of his friends to help you up.</text>
+        <choice link="20">Show gratitude</choice>
+        <choice link="16">Decline the offer for help</choice>
+    </prompt>
+	<prompt id="19">
+        <text>You look around and request help. Unfortunately, nobody is willing to help you after you earned the native's distrust.</text>
+        <choice link="12">Go back</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="20">
+        <text>Brushing yourself off you start walking towards the jungle leaving the station behind. After walking for several hours the group decided to camp for the night right next to the mighty Congo River. You happen to see Sir Dick (Richard) Wolf </text>
+        <choice link="21">Make small talk</choice>
+        <choice link="21">Ask what exactly they are doing</choice>
+    </prompt>
+	<prompt id="21">
+        <text>You have a long boring conversation that doesn't affect the storyline</text>
+        <choice link="21">Talk some more</choice>
+        <choice link="22">Go to bed</choice>
+    </prompt>
+	<prompt id="22">
+        <text>You wake up the next morning with the fire dead and everyone peacefully sleeping. You take a walk into the jungle for some alone time. You see a native in the woods struggling to get a banana stuck on a tree.</text>
+        <choice link="23">Help him</choice>
+        <choice link="24">Make fun of him</choice>
+    </prompt>
+	<prompt id="23">
+        <text>While you and the native try to get the banana down, a green mamba slithers down the tree.</text>
+        <choice link="24">Run</choice>
+        <choice link="17">Attempt to kill the snake</choice>
+    </prompt>
+	<prompt id="24">
+        <text>A snake bites the native, leaving him dead</text>
+        <choice link="26">Whoops</choice>
+        <choice link="26">Whoops</choice>
+    </prompt>
+	<prompt id="25">
+        <text>Grabbing the nearest banana you kill the snake. The native is very thankful and you both go back to camp. The native starts telling his friends about your bravery and they are impressed by your actions. </text>
+        <choice link="27">Continue</choice>
+        <choice link="27">Continue</choice>
+    </prompt>
+	<prompt id="26">
+        <text>The group decides to move on with some natives sad due to a friend found dead. As you walk deeper into the forest you find a corpse. The native seems to poke it with the banana. You see the body one of the ones who have been “civilized” indicated by the chain on his neck.</text>
+        <choice link="28">Leave the corpse</choice>
+        <choice link="29">Dig a grave</choice>
+    </prompt>
+	<prompt id="27">
+        <text>The group decides to move on with some natives sad due to a friend found dead. As you walk deeper into the forest you find a corpse. The native seems to poke it with the banana. You see the body one of the ones who have been “civilized” indicated by the chain on his neck.</text>
+        <choice link="30">Leave the corpse</choice>
+        <choice link="30">Dig a grave</choice>
+    </prompt>
+	<prompt id="28">
+        <text>The group loses respect for you and abandons you</text>
+        <choice link="-1">oh...</choice>
+        <choice link="-1">that sucks</choice>
+    </prompt>
+	<prompt id="29">
+        <text>You continue on with your expedition and you find a outpost in the middle of the forest</text>
+        <choice link="31">Inspect it</choice>
+        <choice link="40">Ignore it</choice>
+    </prompt>
+	<prompt id="30">
+        <text>You continue on with your expedition and you find a outpost in the middle of the forest</text>
+        <choice link="32">Inspect it</choice>
+        <choice link="40">Ignore it</choice>
+    </prompt>
+	<prompt id="31">
+        <text>You find a map inside which you are able to follow to the boat. Unfortunately, once you get on, your boat is attacked by natives.</text>
+        <choice link="33">Fend for yourself</choice>
+        <choice link="35">Ask for help</choice>
+    </prompt>
+	<prompt id="32">
+        <text>You find a map inside which you are able to follow to the boat. Unfortunately, once you get on, your boat is attacked by natives.</text>
+        <choice link="34">Fend for yourself</choice>
+        <choice link="36">Ask for help</choice>
+    </prompt>
+	<prompt id="33">
+        <text>Bad plan.</text>
+        <choice link="31">Try again</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="34">
+        <text>Bad plan.</text>
+        <choice link="32">Try again</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="35">
+        <text>After your previous actions none of the natives are willing to help you.</text>
+        <choice link="-1">Well...</choice>
+        <choice link="-1">Darn</choice>
+    </prompt>
+	<prompt id="36">
+        <text>The native who you saved earlier successfully defends you.</text>
+        <choice link="37">lit</choice>
+        <choice link="37">ap lit</choice>
+    </prompt>
+	<prompt id="37">
+        <text>Now you face a choice. You see a native that travelled with you battling off an attacker and a white man who is trying to run away and save himself and you have to shoot one of the attackers that is after them and you only have one bullet.</text>
+        <choice link="38">You save the native</choice>
+        <choice link="39">You save the white man</choice>
+    </prompt>
+	<prompt id="38">
+        <text>Home free! The native helps you fight and you both live!</text>
+        <choice link="0">Hurrah!</choice>
+        <choice link="0">Oh happy day!</choice>
+    </prompt>
+	<prompt id="39">
+        <text>The white man runs away and you all die in a horrible attack.</text>
+        <choice link="-1">Well it's over</choice>
+        <choice link="-1">Whoops</choice>
+    </prompt>
+	<prompt id="40">
+        <text>You head through the forest but are ambushed by natives that chase you to the boat on shore. One of the attackers strikes a native.</text>
+        <choice link="41">Attempt to save him</choice>
+        <choice link="42">It's not worth the time</choice>
+    </prompt>
+	<prompt id="41">
+        <text>Unfortunately the native dies but the rest of the group appreciates your effort. You head on the ship but unfortunately it is attacked by more natives.</text>
+        <choice link="45">Fend for yourself</choice>
+        <choice link="46">Ask for help</choice>
+    </prompt>
+	<prompt id="42">
+        <text>You let the native die and move forwards on to the boat. You head on but unfortunately it is attacked by more natives.</text>
+        <choice link="43">Fend for yourself</choice>
+        <choice link="44">Ask for help</choice>
+    </prompt>
+	<prompt id="43">
+        <text>Bad plan.</text>
+        <choice link="42">Try again</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="44">
+        <text>You ask out for help but nobody is willing.</text>
+        <choice link="42">Go back</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="45">
+        <text>Bad plan.</text>
+        <choice link="41">Try again</choice>
+        <choice link="-1">Give up</choice>
+    </prompt>
+	<prompt id="45">
+        <text>After your valiant efforts to save the native earlier, the group decides to help you.</text>
+        <choice link="37">Good good</choice>
+        <choice link="37">yum yum</choice>
+    </prompt>
+</prompts>
