@@ -22,7 +22,6 @@ body {
 
 
 #options {
-    margin-bottom: -22px;
     margin-left: -8px;
     margin-right: -8px;
     height: 50%;
@@ -31,10 +30,7 @@ body {
 
 .option {
     width: 50%;
-    margin-left: 0;
-    margin-right: 0;
     display: inline-block;
-    height: 100%;
     font-size: 30px;
     position: relative;
     cursor: pointer;

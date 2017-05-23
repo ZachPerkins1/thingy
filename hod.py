@@ -3,8 +3,8 @@ from xml.dom import minidom
 
 app = Flask("HOD Project")
 
-prompts = []
-current_id = 0
+prompts = {}
+current_id = "0"
 
 def preload_choices():
     doc = minidom.parse('data.xml')
@@ -13,15 +13,19 @@ def preload_choices():
     for element in prompt_list:
         t_dict = {}
         t_dict['text'] = element.getElementsByTagName("text")[0].firstChild.nodeValue
+        t_dict['choices'] = []
         choices = element.getElementsByTagName("choice")
-        t_di
- ct['choice_a'] = choices[0].firstChild.nodeValue
-        t_dict['choice_a_link'] = int(choices[0].getAttribute("link"))
-        t_dict['choice_b'] = choices[1].firstChild.nodeValue
-        t_dict['choice_b_link'] = int(choices[1].getAttribute("link"))
 
-        prompts.append(t_dict)
+        for i in range(len(choices)):
+            n_dict = {}
+            n_dict['text'] = choices[i].firstChild.nodeValue
+            n_dict['link'] = choices[i].getAttribute("link")
+            n_dict['index'] = i
+            t_dict['choices'].append(n_dict)
+
+        prompts[element.getAttribute("id")] = t_dict
         print(t_dict)
+
 
 @app.route("/")
 def home():
@@ -32,23 +36,17 @@ def home():
 def make_choice():
     global current_id
     prompt = prompts[current_id]
-    print prompt['choice_a_link']
-    print prompt['choice_b_link']
+
     if request.method == 'POST':
         id = int(request.form['choice'])
-        if id == 0:
-            current_id = prompt['choice_a_link']
-            print "a"
-        else:
-            current_id = prompt['choice_b_link']
-            print "b"
+        current_id = prompt['choices'][id]['link']
 
-    if current_id == -1:
+    if current_id == "-1":
         return render_template('lose.html')
 
     prompt = prompts[current_id]
 
-    return render_template("choice.html", prompt=prompt['text'], choice_a=prompt['choice_a'], choice_b=prompt['choice_b'])
+    return render_template("choice.html", prompt=prompt['text'], choices=prompt['choices'])
 
 @app.route("/restart")
 def restart():
